@@ -1,0 +1,5 @@
+module Arith {
+    interface Multiplication {
+        void mulitply(in double x, in double y, out double result);
+    };
+};
