@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean name="house" class="org.misc.House">
+        <constructor-arg name="buildingNumber" value="32" />
+        <constructor-arg name="flatNumber" value="16" />
+        <property name="room" ref="livingRoom" />
+    </bean>
+
+    <bean name="kitchen" class="org.misc.Kitchen">
+        <!--<property name="tiles" value="true"/>-->
+        <property name="sink" value="true"/>
+        <property name="size" value="24"/>
+    </bean>
+
+    <bean name="livingRoom" class="org.misc.LivingRoom">
+        <constructor-arg name="width" value="10"/>
+        <constructor-arg name="length" value="15"/>
+    </bean>
+</beans>
