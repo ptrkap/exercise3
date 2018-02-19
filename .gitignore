@@ -1,1 +1,5 @@
-*.iml
+*.z
+.idea/*
+*.bat
+#*.iml
+exercise3.iml
